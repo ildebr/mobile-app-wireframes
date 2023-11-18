@@ -1,0 +1,28 @@
+.payment{
+    .section__header{
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+
+    .title-s{
+        color: white;
+        margin-bottom: 1rem;
+    }
+
+
+    .inputctrl{
+        position: relative;
+        margin-bottom: 1rem;
+
+        &__img{
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+
+        }
+        input{
+            margin-bottom: 0;
+        }
+    }
+}

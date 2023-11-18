@@ -1,0 +1,204 @@
+.homecharger{
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .textheaderuser{
+        .greet{
+            font-size: 16px;
+            color: #85898f;
+            font-weight: 400;
+        }
+
+        .user{
+            display: flex;
+                justify-content: space-between;
+            &__name{
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 45px;
+                color: #141d2f;
+
+                
+            }
+        }
+
+        
+    }
+
+
+    .chargeroptions{
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        overflow-y: visible;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        
+        &__element{
+            display: flex;
+            flex-direction: column;
+            width: 180px;
+            height: 218px;
+            overflow: hidden;
+            align-items: center;
+            padding: 1rem 0;
+            padding-bottom: 1.25rem;
+            padding-top: 0;
+            transition: .2s ease;
+            border-radius: 10px;
+            flex-shrink: 0;
+            background-color: white;
+
+            .price,.name{
+                font-size: 16px;
+                color: #232A35;
+            }
+
+
+            &--active{
+                scale: 1.2;
+                box-shadow: #ebf5f7 0px 5px 20px;
+                margin-left: 2.5rem;
+                margin-right: 2.5rem;
+                transition: .4s ease;
+            }
+            img{
+                max-width: 100%;
+                max-height: 97px;
+            }
+        }
+
+        &__button{
+            background-color: #E7F5FC;
+            color: #0D98E5;
+            font-size: 12.26px;
+            line-height: 18.39px;
+            font-weight: 400;
+            width: fit-content;
+            padding: .4rem 2.5rem;
+        }
+
+        &__text{
+            margin: .75rem 0;
+
+        }
+
+
+    }
+
+    &__footer{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: white;
+
+        &el{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            p{
+                color: #9DA0A5;
+            }
+
+            &--selected{
+                color: #0D98E5;
+
+                p{
+                    // color: #0D98E5;
+                    color: inherit;
+                }
+            }
+        }
+
+
+    }
+
+    .homechargerhero.buttons{
+        .btn-tertiary{
+            margin: 0 auto 4rem !important;
+            img{
+                filter: invert(1);
+            }
+        }
+    }
+
+    .homerchargerhero{
+        .optionshea{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+
+#dark{
+    .homecharger{
+
+        .textheaderuser{
+            .greet{
+                color: #85898f;
+            }
+            .user__name{
+                color: white;
+            }
+
+            .user__notifications{
+                background-color: #3c414c;
+                    padding: .25rem;
+                    border-radius: 400px;
+                    height: fit-content;
+                    width: fit-content;
+                    height: 50px;
+                    width: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                img{
+                    filter: invert(1);
+                    
+                }
+            }
+
+        }
+        .chargeroptions{
+            &__element{
+                background-color: #141d2f;
+                border: 1px solid gray;
+
+                .price,.name{
+                    color: #B6B8BC;
+                }
+                &--active{
+                    box-shadow: none;
+                    width: 210px;
+                }
+            }
+
+            &__button{
+                background-color: #3C414C;
+            }
+        }
+
+        .homerchargerhero{
+            .optionshea{
+                .charger{
+                    color: white;
+                }
+                p{
+                    color: #B6B8BC;
+                }
+            }}
+    }
+
+    .homecharger__footer{
+        background-color: transparent;
+
+        &text{
+            font-size: 14px;
+        }
+    }
+}

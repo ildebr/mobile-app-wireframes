@@ -1,0 +1,17 @@
+.plugtime{
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .form {
+            .days{
+                margin-top: 2.5rem;
+            }    
+
+            .form-control{
+                margin-bottom:1.5rem;
+            }
+        }
+    }
+}

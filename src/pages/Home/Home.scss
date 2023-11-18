@@ -1,0 +1,46 @@
+.homepage{
+    background-color: #0d98e5;
+
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        color: white;
+
+
+        .img-container{
+            background-image: radial-gradient(circle, rgb(42, 176, 236) 40%, rgb(13, 152, 229) 72%);
+            overflow: visible;
+            position: relative;
+            background-repeat: no-repeat; background-size: cover;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+
+
+        .logo-img{
+            width: 232px;
+            display: inline-block;
+            margin: 0 auto;
+        }
+
+        h1{
+            text-align: center;
+            font-size: 36px;
+            line-height: 50px;
+            font-weight: 400;
+        }
+    }
+}
+
+#dark{
+
+    &:has(>.homepage){
+        background-color: #0d98e5;
+    }
+   
+    .homepage .container{
+        background-color: #0d98e5;
+    }
+}

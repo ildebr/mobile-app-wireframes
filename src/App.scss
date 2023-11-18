@@ -1,0 +1,402 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+  }
+
+
+  .container{
+    padding: 1.5rem;
+    min-height: 100vh;
+  }
+
+
+  img{
+    max-width: 100%;
+  }
+
+
+#light{
+
+
+    .btn-primary{
+        background-color: white;
+        color: #0d98e5;
+    }
+
+    .btn-secondary{
+      color: white;
+      background-color: #0d98e5;
+
+  }
+
+  .btn-quaternary{
+    border: 1px solid #0d98e5;
+    background-color: white;
+    color: #0d98e5;
+  }
+
+
+  .btn-tertiary{
+    background-color: #232a35;
+    color: white;
+    width: fit-content;
+    margin: 0 auto;
+    display: block;
+    border-radius: 500px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding-right: 2rem;
+    font-weight: 300;
+
+    span{
+      background-color: white;
+      padding: .5rem;
+      border-radius: 500px;
+      height: 40px;
+      width: 40px;
+      display: inline-block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: .75rem;
+    }
+  }
+}
+
+#dark{
+  .container{
+    background-color: #141d2f;
+  }
+
+
+  .btn-primary{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+  }
+
+  .section__header{
+    .section__title{
+      color: white;
+    }
+    .subtext{
+      color: #B6B8BC;
+    }
+  }
+
+
+  .form{
+    label{
+      span{
+        color: white;
+      }
+
+      input{
+        background-color: transparent;
+      }
+
+      
+    }
+  }
+
+  input[type="checkbox"]{
+    background-color: transparent;
+    accent-color: #e74c3c;
+    filter: invert(100%) hue-rotate(18deg) brightness(1.7);
+  }
+
+  .btn-secondary{
+    color: white;
+    background-color: #0d98e5;
+
+  }
+
+  .btn-tertiary{
+    background-color: #232a35;
+    color: white;
+    width: fit-content;
+    margin: 0 auto;
+    display: block;
+    border-radius: 500px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding-right: 2rem;
+    font-weight: 300;
+
+    span{
+      background-color: #3c414c;
+      padding: .5rem;
+      border-radius: 500px;
+      height: 40px;
+      width: 40px;
+      display: inline-block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: .75rem;
+    }
+  }
+
+  .btn-quaternary{
+    border: 1px solid #0d98e5;
+    background-color: transparent;
+    color: #0d98e5;
+  }
+}
+
+
+
+// General
+
+.btn{
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    padding: .75rem;
+    border-radius: 10px;
+    display: inline-block;
+    border: none;
+    background-color: transparent;
+}
+
+
+.section__title{
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.subtext{
+  color: #85898F;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+
+
+.form{
+  input[type="text"],input[type="email"], input[type="password"], input[type="time"]{
+    width: 100%;
+    padding: 1rem;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    border: 1px solid #b7b7ba;
+    outline: gray;
+  }
+
+  label span{
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: .5rem;
+    display: inline-block;
+  }
+
+  .divided{
+    label{
+      margin-bottom: 0;
+    }
+  }
+  label{
+    margin-bottom: 1rem;
+  }
+
+  .divided{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .checkbox-control {
+    display: block;
+    position: relative;
+    padding-left: 6px;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+  /* Hide the default checkbox */
+  input[type=checkbox] {
+    visibility: hidden;
+}
+  
+/* Creating a custom checkbox
+based on demand */
+.geekmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border: 1px solid #0D98E5;
+    border-radius: 2px;
+}
+  
+/* Specify the background color to be
+shown when hovering over checkbox */
+.checkbox-control:hover input ~ .geekmark {
+    // background-color: yellow;
+    border: 1px solid #0D98E5;
+    border-radius: 2px;
+}
+  
+/* Specify the background color to be
+shown when checkbox is active */
+.checkbox-control input:active ~ .geekmark {
+    // background-color: red;
+}
+  
+/* Specify the background color to be
+shown when checkbox is checked */
+.checkbox-control input:checked ~ .geekmark {
+    background-color: green;
+    background-color: white;
+    border: 1px solid #0D98E5;
+    border-radius: 2px;
+}
+  
+/* Checkmark to be shown in checkbox */
+/* It is not be shown when not checked */
+.geekmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+/* Display checkmark when checked */
+.checkbox-control input:checked ~ .geekmark:after {
+    display: block;
+}
+  
+/* Styling the checkmark using webkit */
+/* Rotated the rectangle by 45 degree and 
+showing only two border to make it look
+like a tickmark */
+.checkbox-control .geekmark:after {
+    left: 6px;
+    bottom: 5px;
+    width: 4px;
+    height: 8px;
+    border: solid #0D98E5;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+  .checkbox-container{
+    margin-bottom: .5rem;
+    label{
+      display: inline-block;
+    }
+  }
+
+  span.geekmark{
+    margin-bottom: 0;
+  }
+
+  .checkbox-name{
+    margin-left: .5rem;
+    font-weight: 600;
+    display: inline-block;
+    color: #141D2F;
+    font-size: 16px;
+  }
+
+  .time-range-container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    span{
+      padding: 0.75rem;
+      display: inline-block;
+      color: #85898F;
+    }
+
+    .input-control{
+      position: relative;
+      input{
+        margin-bottom: 0;
+        border: 1px solid #85898F;
+        color: #85898F;
+      }
+    }
+
+    .time-arrows{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 1rem;
+    }
+  }
+
+  .check{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 2rem;
+
+    .checkbox-container{
+      margin-bottom: 0;
+    }
+
+    span{
+      font-weight: 400;
+      color: #85898F;
+      font-size: 15px;
+    }
+  }
+
+  .days{
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
+
+
+#dark{
+  .form{
+    .time-range-container {
+      .input-control {
+        input{
+          background-color: transparent;
+        }
+      }
+    }
+    .checkbox-control input:checked ~ .geekmark {
+      background-color: green;
+      background-color: transparent;
+      border: 1px solid #0D98E5;
+      border-radius: 2px;
+    } 
+  }
+}
+
+.error-screen{
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  z-index: 1000;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-width:451px) {
+  .error-screen{
+    display: flex;
+  }
+}

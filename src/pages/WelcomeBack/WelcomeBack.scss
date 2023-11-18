@@ -1,0 +1,129 @@
+
+
+
+.welcomeback{
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .section{
+        &__header{
+            margin-bottom: 2rem;
+        }
+    }
+
+    .form{
+        margin-bottom: 1.5rem;
+    }
+    .signup__options{
+        color: #85898F;
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+
+        a{
+            color: #85898F;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        input{
+            margin-right: .25rem;
+        }
+    }
+
+
+    .btn{
+        margin-bottom: 2.5rem;
+    }
+
+    .signin{
+        margin-bottom: 3rem;
+
+        &__header{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 1.5rem;
+
+            span{
+                height: 1px;
+                background: #85898F;
+                flex-grow: 1;
+            }
+
+            p{
+                flex-grow: 1;
+                text-align: center; 
+                color: #85898F;
+            }
+        }
+
+        &__options{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+
+
+        }
+
+        &__option{
+            border: 1px solid #cbcdd0;
+            padding: 1rem .5rem;
+            border-radius: 8px;
+            font-weight: 500;
+            justify-content: center;
+            span{
+                font-weight: 600;
+                margin-left: .25rem;
+            }
+            display: flex;
+            
+        }
+        
+    }
+
+
+    .noaccount{
+        text-align: center;
+        line-height: 24px;
+        &__header{
+            color: #85898F;
+            font-size: 16px;
+        }
+
+        &__footer{
+            color: #85898F;
+            font-size: 16px;
+            a{
+                color: black;
+                text-decoration: none;
+
+            }
+        }
+
+
+    }
+
+
+}
+
+
+#dark{
+    .signin{
+        &__option{
+            span{
+                color: #85898F;
+            }
+            
+        }
+    }
+
+    .noaccount__footer a{
+        color: rgb(216, 216, 216);
+    }
+}

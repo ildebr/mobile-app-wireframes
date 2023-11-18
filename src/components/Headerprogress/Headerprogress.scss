@@ -1,0 +1,39 @@
+.headerprogress{
+    display: flex;
+
+    &__bar{
+        flex-grow: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 1rem;
+    }
+    &__element{
+        background-color: #E7E7E9;
+        height: 8px;
+        width: 52px;
+        border-radius: 8px;
+
+        &--active{
+            background-color: black;
+        }
+    }
+
+    .backarrow{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+#dark{
+    .headerprogress{
+        &__element{
+            background-color: #3C414C;
+            &--active{
+                background-color: #0D98E5;
+            }
+        }
+    }
+
+}

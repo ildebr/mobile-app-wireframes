@@ -1,0 +1,17 @@
+.congratulations{
+    .imagecontainer img{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .text-container{
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+        }
+    }
+}

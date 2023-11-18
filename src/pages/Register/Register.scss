@@ -1,0 +1,47 @@
+.register{
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .terms {
+        margin-bottom: 3rem;
+        p{
+            color: #85898F;
+            text-align: center;
+            font-weight: 500;
+            font-size: 14px;
+            a{
+                color: black;
+                text-decoration: none;
+                font-weight: 700;
+            }
+        }
+
+
+        &.m{
+            font-size: 16px;
+        }
+    }
+
+    .section__header{
+        margin-bottom: 2rem;
+    }
+
+    .form{
+        margin-bottom: 2rem;
+    }
+}
+
+
+#dark{
+    .terms {
+        p{
+            color: #85898F;
+        }
+        a{
+            color: rgb(208, 208, 208);
+        }
+    }
+}
